@@ -1,7 +1,7 @@
 export default function LoginPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="w-full max-w-md bg-white shadow-lg rounded-2xl p-8">
+    <div className="min-h-screen flex items-center justify-center bg-gray-900">
+      <div className="w-full max-w-md bg-gray-800 shadow-lg rounded-2xl p-8">
         
         <h1 className="text-3xl font-bold text-center mb-6">
           Login
@@ -24,14 +24,14 @@ export default function LoginPage() {
 
           {/* Password */}
           <div>
-            <label className="block mb-2 text-sm font-medium">
+            <label className="block mb-2 text-sm font-medium text-black-700">
               Password
             </label>
 
             <input
               type="password"
               placeholder="Enter your password"
-              className="w-full px-4 py-3 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-3 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500 "
             />
           </div>
 
