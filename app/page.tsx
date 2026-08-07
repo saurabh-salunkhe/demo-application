@@ -1,13 +1,25 @@
+"use client";
+
+import type { FormEvent } from "react";
+import { useRouter } from "next/navigation";
+
 export default function LoginPage() {
+  const router = useRouter();
+
+  const handleLogin = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    router.push("/dashboard");
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900">
       <div className="w-full max-w-md bg-gray-800 shadow-lg rounded-2xl p-8">
         
-        <h1 className="text-3xl font-bold text-center mb-6">
-          Login
-        </h1>
+          <h1 className="text-3xl font-bold text-center mb-6">
+            Login
+          </h1>
 
-        <form className="space-y-5">
+          <form onSubmit={handleLogin} className="space-y-5">
           
           {/* Email */}
           <div>
